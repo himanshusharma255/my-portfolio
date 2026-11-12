@@ -7,6 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Numbered About > Projects list */
+#projects .project-list { list-style: decimal outside; padding-left: 32px; margin: 18px 0 0; }
+#projects .project-list > li { display: list-item; list-style: decimal outside; padding-left: 8px; margin-bottom: 22px; color: #ff0051; }
+#projects .project-list > li::marker { color: #ff0051; font-size: 20px; font-weight: 700; }
+#projects .project-list > li > span { color: #ff0051; font-size: 20px; font-weight: 500; }
+#projects .project-list > li > p { color: #ccc; font-size: 16px; line-height: 1.55; margin: 5px 0; }
+#projects .project-list > li strong { color: #fff; }
+</style>
 </head>
 <body>
 <div id="header">
@@ -82,16 +91,23 @@ My focus is on full-stack development, where I work with both frontend and backe
         C++, JavaScript, Python</li>
 
         <li><span>Frontend Technologies</span><br>
-        HTML, CSS, React.js, Responsive Design</li>
+        HTML, Tailwind CSS, React.js, Angular </li>
 
         <li><span>Backend Technologies</span><br>
         Node.js, Express.js, REST APIs</li>
 
         <li><span>Database</span><br>
-        MongoDB, MySQL</li>
+        MongoDB, MySQL,PostgreSQL</li>
+
+        <li><span>Cloud </span><br>
+        AWS </li>
 
         <li><span>Version Control</span><br>
-        Git, GitHub</li>
+        Git, GitHub,GitLab</li>
+
+        <li><span>Development Tools</span><br>
+            Visual Studio Code, Overleaf, Postman, npm, Vite
+</li>
 
         <li><span>Office & Productivity Tools</span><br>
         Microsoft Excel, MS Word, PowerPoint</li>
@@ -99,46 +115,76 @@ My focus is on full-stack development, where I work with both frontend and backe
         <li><span>Documentation</span><br>
         LaTeX, Technical Writing</li>
 
-        <li><span>Other Skills</span><br>
-        Problem Solving, Data Structures & Algorithms, Debugging</li>
+       
+<li>
+    <span>Other Skills</span><br>
+    Data Structures & Algorithms (DSA),
+    Object-Oriented Programming (OOPs),
+    Database Management System (DBMS),
+    Operating Systems (OS),
+    Computer Networks (CN),
+    Problem Solving, Debugging
+</li>
+
 
     </ul>
 </div>
 <div class="tab-contents" id="projects">
-
-    <ul>
-
+    <ol class="project-list">
         <li>
-            <span>Expense Tracker</span><br>
-            A web app to manage income and expenses with analytics dashboard.<br>
-            <b>Technologies:</b> HTML, CSS, JavaScript, React.js, Node.js, MongoDB
+            <span>Social Media App</span>
+            <p>Social networking platform with user profiles, posts, likes, and comments.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
         </li>
 
         <li>
-            <span>E-Commerce Website</span><br>
-            Online shopping platform with product listings, cart, and checkout system.<br>
-            <b>Technologies:</b> React.js, Node.js, Express.js, MongoDB, Stripe API
+            <span>Music Streaming App</span>
+            <p>Music platform with playlists, song search, and audio playback.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
         </li>
 
         <li>
-            <span>Real-Time Chat Application</span><br>
-            Messaging app with instant communication and user authentication.<br>
-            <b>Technologies:</b> React.js, Node.js, Socket.io, Express.js, MongoDB
+            <span>Online Shopping App</span>
+            <p>E-commerce platform with product listings, shopping cart, and checkout.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
         </li>
 
         <li>
-            <span>Food Delivery Website</span><br>
-            Platform for browsing restaurants, placing orders, and tracking delivery.<br>
-            <b>Technologies:</b> HTML, CSS, JavaScript, PHP / Node.js, MySQL / MongoDB
+            <span>Project Management App</span>
+            <p>Manage projects, assign tasks, and track team progress.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
         </li>
 
         <li>
-            <span>Personal Portfolio Website</span><br>
-            Responsive portfolio showcasing projects, skills, and contact information.<br>
-            <b>Technologies:</b> HTML, CSS, JavaScript
+            <span>Real-Time Chat App</span>
+            <p>Instant messaging application with real-time communication.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Socket.io, Express.js, MongoDB</p>
         </li>
 
-    </ul>
+        <li>
+            <span>Job Portal App</span>
+            <p>Job search platform with applications, profiles, and job listings.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
+        </li>
+
+        <li>
+            <span>Learning Management System</span>
+            <p>Online learning platform with courses, assignments, and progress tracking.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
+        </li>
+
+        <li>
+            <span>Food Delivery App</span>
+            <p>Food ordering platform with restaurant listings and order tracking.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
+        </li>
+
+        <li>
+            <span>Expense Tracker App</span>
+            <p>Track income, expenses, budgets, and financial analytics.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB</p>
+        </li>
+    </ol>
 </div>
 <div class="tab-contents" id="education">
     <ul>
@@ -243,14 +289,70 @@ My focus is on full-stack development, where I work with both frontend and backe
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
+            <div class="work work-concept tasks">
+                <img src="project-management.png" alt="Project Management App">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-list-check"></i><span>TaskFlow</span></div>
+                <div class="layer">
+                    <h3>Project Management Dashboard</h3>
+                    <p>A Kanban-style workspace for tasks, priorities, deadlines, and team collaboration.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            <div class="work work-concept chat">
+                <img src="real-time-chat.png" alt="Real-Time Chat App">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-comments"></i><span>ChatWave</span></div>
+                <div class="layer">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>A messaging platform concept with group chats, online status, and instant notifications.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            <div class="work work-concept jobs">
+                <img src="job-portal.png" alt="Job Portal App">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-briefcase"></i><span>CareerBridge</span></div>
+                <div class="layer">
+                    <h3>Job Portal</h3>
+                    <p>A recruitment platform concept with job listings, resume uploads, and application tracking.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            <div class="work work-concept learning">
+                <img src="learning-management.png" alt="Learning Management System">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-graduation-cap"></i><span>EduSphere</span></div>
+                <div class="layer">
+                    <h3>Learning Management System</h3>
+                    <p>An online learning platform concept with courses, quizzes, and progress tracking.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            <div class="work work-concept food">
+                <img src="food-delivery.png" alt="Food Delivery App">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-utensils"></i><span>FoodExpress</span></div>
+                <div class="layer">
+                    <h3>Food Delivery Platform</h3>
+                    <p>A food ordering concept with restaurant menus, cart, and order tracking.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            <div class="work work-concept finance">
+                <img src="expense-tracker.png" alt="Expense Tracker App">
+                <div class="project-visual" aria-hidden="true"><i class="fas fa-chart-pie"></i><span>ExpenseWise</span></div>
+                <div class="layer">
+                    <h3>Expense Tracker</h3>
+                    <p>A finance dashboard concept for budgets, expenses, and visual analytics.</p>
+                    <span class="project-tech">MERN Stack · Project Concept</span>
+                </div>
+            </div>
+            
+        
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#projects" class="btn" onclick="document.querySelector('.tab-links[onclick*=projects]')?.click()">See all projects</a>
     </div>
 </div>
 <!-- ----------contact------------- -->
 <div id="contact">
     <div class="container">
-        <p class="section-kicker">HAVE A PROJECT IN MIND?</p>
+        <p class="section-kicker">HAVE A PROJECT IN MIND ?</p>
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
@@ -265,7 +367,11 @@ My focus is on full-stack development, where I work with both frontend and backe
                     
                 </div>
                 <p>I am open to internships & full-time roles.</p>
-                <a href="resume.pdf" download="Himanshu_Sharma_CV.pdf" type="application/pdf" class="btn btn2">Download CV</a>
+                
+<a href="resume.pdf" download="Himanshu_Sharma_CV.pdf" class="btn btn2">
+    Download CV
+</a>
+
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
