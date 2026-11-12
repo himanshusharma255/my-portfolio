@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Sharma | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+ <div class="hero-shell">
+  <div class="hero-main">
+   <nav class="top-nav" aria-label="Main navigation">
+    <a href="#header" class="brand" aria-label="Home">H</a>
+    <ul id="sidemenu">
+     <li><a href="#about" class="active">About me</a></li>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li class="close-nav"><button type="button" onclick="closemenu()" aria-label="Close menu"><i class="fas fa-times"></i></button></li>
+    </ul>
+    <button class="open-nav" type="button" onclick="openmenu()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+   </nav>
+   <div class="hero-copy">
+    <h1>I design exceptional<br>websites.</h1>
+    <p>Hi, I'm Himanshu Sharma — a web developer creating modern, responsive, and beautiful digital experiences. I turn ideas into websites that people love to use.</p>
+    <a class="pink-button" href="#portfolio">Portfolio</a>
+   </div>
+   <p class="hero-footer">Let's <a href="#contact">work</a> together!</p>
+  </div>
+  <div class="hero-portrait">
+   <img src="user22.jpeg" alt="Portrait of Himanshu Sharma" onerror="this.style.display='none';this.parentElement.classList.add('portrait-fallback')">
+   <div class="portrait-bottom"><h2>Himanshu Sharma</h2><p>Developer</p>
+    <div class="social-icons">
+     <a href="https://github.com/" aria-label="GitHub profile (add your URL)"><i class="fab fa-github"></i></a>
+     <a href="https://www.linkedin.com/in/himanshu-sharma-2527ba28a/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+     <a href="#contact" aria-label="Contact"><i class="fas fa-envelope"></i></a>
+    </div>
+   </div>
+  </div>
+  <aside class="side-rail" aria-label="Quick links">
+   <a href="#about" aria-label="Scroll to about" class="rail-arrow"><i class="fas fa-arrow-down"></i></a>
+   <div class="rail-links"><a href="#about" aria-label="About"><i class="fas fa-user"></i></a><a href="#portfolio" aria-label="Portfolio"><i class="fas fa-briefcase"></i></a><a href="#contact" aria-label="Contact"><i class="fas fa-envelope"></i></a></div>
+  </aside>
+ </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <p class="section-kicker">GET TO KNOW ME</p>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about_me_photo.jpeg" alt="Himanshu Sharma">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate Web Developer and MERN Stack enthusiast who loves building modern, responsive, and user-friendly websites and applications. I enjoy turning ideas into real digital products using clean code, creative design, and efficient problem-solving.
+
+My focus is on full-stack development, where I work with both frontend and backend technologies to build complete web solutions. I constantly learn new tools and technologies to improve my skills and deliver better experiences.</p>
+
+                <div class="tab-titles">
+                   <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+<p class="tab-links" onclick="opentab(event,'projects')">Projects</p>
+<p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                </div>
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+
+        <li><span>UI/UX</span><br>
+        Designing modern and user-friendly web/app interfaces</li>
+
+        <li><span>Web Development</span><br>
+        Building responsive and dynamic websites using modern technologies</li>
+
+        <li><span>Data Analysis</span><br>
+        Analyzing data to extract insights and support data-driven decisions</li>
+
+        <li><span>Programming Languages</span><br>
+        C++, JavaScript, Python</li>
+
+        <li><span>Frontend Technologies</span><br>
+        HTML, CSS, React.js, Responsive Design</li>
+
+        <li><span>Backend Technologies</span><br>
+        Node.js, Express.js, REST APIs</li>
+
+        <li><span>Database</span><br>
+        MongoDB, MySQL</li>
+
+        <li><span>Version Control</span><br>
+        Git, GitHub</li>
+
+        <li><span>Office & Productivity Tools</span><br>
+        Microsoft Excel, MS Word, PowerPoint</li>
+
+        <li><span>Documentation</span><br>
+        LaTeX, Technical Writing</li>
+
+        <li><span>Other Skills</span><br>
+        Problem Solving, Data Structures & Algorithms, Debugging</li>
+
+    </ul>
+</div>
+<div class="tab-contents" id="projects">
+
+    <ul>
+
+        <li>
+            <span>Expense Tracker</span><br>
+            A web app to manage income and expenses with analytics dashboard.<br>
+            <b>Technologies:</b> HTML, CSS, JavaScript, React.js, Node.js, MongoDB
+        </li>
+
+        <li>
+            <span>E-Commerce Website</span><br>
+            Online shopping platform with product listings, cart, and checkout system.<br>
+            <b>Technologies:</b> React.js, Node.js, Express.js, MongoDB, Stripe API
+        </li>
+
+        <li>
+            <span>Real-Time Chat Application</span><br>
+            Messaging app with instant communication and user authentication.<br>
+            <b>Technologies:</b> React.js, Node.js, Socket.io, Express.js, MongoDB
+        </li>
+
+        <li>
+            <span>Food Delivery Website</span><br>
+            Platform for browsing restaurants, placing orders, and tracking delivery.<br>
+            <b>Technologies:</b> HTML, CSS, JavaScript, PHP / Node.js, MySQL / MongoDB
+        </li>
+
+        <li>
+            <span>Personal Portfolio Website</span><br>
+            Responsive portfolio showcasing projects, skills, and contact information.<br>
+            <b>Technologies:</b> HTML, CSS, JavaScript
+        </li>
+
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+    <ul>
+
+        <li>
+            <span>2023 – 2026</span><br>
+            <b>Master of Computer Applications (MCA)</b><br>
+            Motilal Nehru National Institute of Technology (MNNIT), Allahabad<br>
+            <i>Admitted through NIMCET (AIR 248)</i>
+        </li>
+
+        <li>
+            <span>2022 – 2023</span><br>
+            <b>Competitive Exam Preparation</b><br>
+            Prepared for MCA Entrance Exams (NIMCET & MAH-CET)<br>
+            <b>NIMCET Rank:</b> 248 (All India)<br>
+            <b>MAH-CET Percentile:</b> 98.77
+        </li>
+
+        <li>
+            <span>2019 – 2022</span><br>
+            <b>Bachelor of Computer Applications (BCA)</b><br>
+            College of Management Studies, Unnao
+        </li>
+
+        <li>
+            <span>2017 – 2019</span><br>
+            <b>Senior Secondary (12th)</b><br>
+            Hardutt Prasad Inter College, Kanpur
+        </li>
+
+        <li>
+            <span>2017</span><br>
+            <b>Secondary (10th)</b><br>
+            Hardutt Prasad Inter College, Kanpur
+        </li>
+
+    </ul>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <p class="section-kicker">WHAT I CAN DO</p>
+        <h1 class="sub-title">My Services<span class="title-dot">.</span></h1>
+        <div class="services-list tilt-grid">
+            <div>
+                <i class="fas fa-code"></i>
+                <img class="service-image" src="web-design.png" alt="Web Design illustration" loading="lazy">
+                <h2>Web Design</h2>
+                <p>I design modern, responsive, and user-friendly websites that provide a smooth user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <img class="service-image" src="ui-ux.png" alt="UI/UX Design illustration" loading="lazy">
+                <h2>UI/UX Design</h2>
+                <p>I create clean, intuitive, and user-centered UI/UX designs that enhance digital experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <img class="service-image" src="app-design.png" alt="App Design illustration" loading="lazy">
+                <h2>App Design</h2>
+                <p>
+                    I design modern and intuitive mobile apps with smooth interfaces and a seamless user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <p class="section-kicker">SELECTED PROJECTS</p>
+        <h1 class="sub-title">Featured Work<span class="title-dot">.</span></h1>
+        <div class="work-list tilt-grid">
+            <div class="work">
+                <img src="social-media.png" alt="Social media app project">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A social platform concept featuring profiles, posts, stories, and messaging.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="music-app.png" alt="Music app project">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A music player concept with playlists, song browsing, and playback controls.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="online-shopping.png" alt="Online shopping app project">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>An e-commerce storefront concept featuring products, categories, and a shopping cart.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <p class="section-kicker">HAVE A PROJECT IN MIND?</p>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> iamhimanshusharma32@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>80xxxxxx52</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/himanshu.sharma.876910"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/HimanshuSh50896?t=_hK6EUGe_lyrmDpzFJ9oQg&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/im__himanshu__sharma/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/himanshu-sharma-2527ba28a/"><i class="fab fa-linkedin"></i></a>
+                    <br>
+                    
+                </div>
+                <p>I am open to internships & full-time roles.</p>
+                <a href="my-cv -.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>This website was designed and developed by me.</p>
+    </div>
+</div>
+
+<script>
+// ABOUT SECTION TABS
+function opentab(event, tabname) {
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    const selectedTab = document.getElementById(tabname);
+
+    if (!selectedTab) return;
+
+    for (const tablink of tablinks) tablink.classList.remove("active-link");
+    for (const tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+
+    event.currentTarget.classList.add("active-link");
+    selectedTab.classList.add("active-tab");
+}
+
+// MOBILE NAVIGATION
+const sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    if (sidemenu) sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    if (sidemenu) sidemenu.style.right = "-250px";
+}
+
+// Close the mobile menu after selecting a navigation link.
+if (sidemenu) {
+    sidemenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closemenu);
+    });
+}
+
+// GOOGLE SHEETS CONTACT FORM
+// Deployed Google Apps Script Web App URL.
+const scriptURL = "https://script.google.com/macros/s/AKfycbwF-ponvkSX7PdsMLK7q2GTmvvYKZapdyLMmboYh40A4utXaLBsDbrqWZdOvvGcG5FenQ/exec";
+
+const contactForm = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+if (contactForm && msg) {
+    contactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        if (!scriptURL) {
+            msg.textContent = "Contact form is not configured yet. Please add your Apps Script URL.";
+            msg.style.color = "#ff6b6b";
+            return;
+        }
+
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+        }
+
+        msg.textContent = "";
+        msg.style.color = "#61b752";
+
+        try {
+            // no-cors sends the POST, but the browser cannot read Google's response.
+            // Verify delivery by checking the connected Google Sheet.
+            await fetch(scriptURL, {
+                method: "POST",
+                body: new FormData(contactForm),
+                mode: "no-cors"
+            });
+
+            msg.textContent = "Request submitted. Please check Google Sheets to confirm delivery.";
+            contactForm.reset();
+        } catch (error) {
+            console.error("Contact form error:", error);
+            msg.textContent = "Unable to submit your message. Please try again.";
+            msg.style.color = "#ff6b6b";
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "Submit";
+            }
+            window.setTimeout(() => {
+                msg.textContent = "";
+            }, 6000);
+        }
+    });
+}
+
+// Subtle pointer-based 3D tilt for cards on devices with a fine pointer.
+if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.querySelectorAll(".services-list > div, .work").forEach((card) => {
+        card.addEventListener("mousemove", (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = (event.clientX - rect.left) / rect.width - 0.5;
+            const y = (event.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(900px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-8px)`;
+        });
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "perspective(900px) rotateY(0) rotateX(0) translateY(0)";
+        });
+    });
+}
+</script>
+
+</body>
+</html>
